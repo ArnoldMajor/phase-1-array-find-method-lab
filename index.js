@@ -10,9 +10,9 @@ const record = [
 
 superbowlWin(record);
 
-function superbowlWin(Arr) {
-    const win = Arr.find(function (Arr) {
-        return Arr.result === "W";
+function superbowlWin(arr) {
+    const win = arr.find(function (obj) {
+        return obj.result === "W";
     })
     return win ? win.year : undefined
 }
